@@ -4,6 +4,13 @@
     <title>スウェーデン</title>
   </head>
   <body>
+    <h2>BMI指標計算</h2>
+<form oninput="bmi.value = Math.round(Number(weight.value) / Math.pow(Number(height.value)/100, 2) * 10) / 10">
+    <p><label>体重(kg)：<input name="weight" type="number" step="any"></label></p>
+    <p><label>身長(cm)：<input name="height" type="number" step="any"></label></p>
+    <p><label>BMI：<output name="bmi"></output></label></p>
+</form>
+    
     <img src="https://images.unsplash.com/photo-1509356843151-3e7d96241e11?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" width="1200" height="480" alt="ストックホルム">
     <br>
     <b>ストックホルムはスウェーデンの首都であり「北欧のヴェネツィア」とも称される都市です。</b>
